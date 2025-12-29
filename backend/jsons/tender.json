@@ -1,0 +1,92 @@
+{
+  "tender_id": "TND-2025-0121",
+  "title": "Supply of Office Equipment",
+  "description": "Tender for the supply of office equipment including computers, printers, and furniture.",
+  "stage": "draft | live | awarded",
+  "end_date": "2025-07-31T17:00:00Z",
+  "amount": 5000000,
+  "earnest_money_deposit": 50000,
+  "attachments": [
+    {
+      "file_name": "tender.pdf",
+      "url": "/tenders/TND-2025-011/tender  .pdf"
+    },
+    {
+      "file_name": "terms_and_conditions.pdf",
+      "url": "/tenders/TND-2025-011/terms_and_conditions.pdf"
+    }
+  ],
+  "contact_person": "Anil Kumar",
+  "contact_phone": "+91 9987654321",
+  "contact_email": "anil.kumar@company.com",
+  "requirements": {
+    "elegibility": [
+      "Minimum 5 years of experience in supplying office equipment.",
+      "Must have supplied to at least 3 large corporations in the last 2 years.",
+      "ISO 9001 certification is preferred."
+    ],
+    "technical_sku": {
+      "Intel Core processors": {
+        "core": "i5 or higher",
+        "generation": "10th or higher"
+      },
+      "SSD Storage": {
+        "capacity": "at least 1024GB",
+        "type": "NVMe"
+      },
+      "RAM": {
+        "size": "at least 16GB",
+        "type": "DDR4",
+        "speed": "3200MHz"
+      },
+      "Printer Technology": {
+        "type": "Laser Multifunction",
+        "connectivity": "Wireless (802.11ac)"
+      }
+    },
+    "technical_checklist": [
+      "Delivery Time: Must be within 6 weeks from the date of order.",
+      "Installation: On-site installation and setup required.",
+      "Others: Include 2 years of free maintenance and support."
+    ],
+    "financial": {
+      "Intel Core processors": {
+        "rate_per_unit": 0,
+        "quantity": 50,
+        "total_cost": 0
+      },
+      "SSD Storage": {
+        "rate_per_unit": 0,
+        "quantity": 50,
+        "total_cost": 0
+      },
+      "RAM": {
+        "rate_per_unit": 0,
+        "quantity": 100,
+        "total_cost": 0
+      },
+      "Printer Technology": {
+        "rate_per_unit": 0,
+        "quantity": 20,
+        "total_cost": 0
+      },
+      "others": {
+        "transportation": 0,
+        "installation": 0,
+        "warranty": 0
+      },
+      "total_budget": 0
+    },
+
+    "financial_checklist": [
+      "All costs must be itemized clearly.",
+      "Quotes must be valid for at least 90 days.",
+      "Payment terms: 30% advance, 70% upon delivery and installation."
+    ],
+
+    "legal": [
+      "Must comply with all local and national regulations regarding office equipment supply.",
+      "Must be atleast 80% made in India Products."
+    ]
+  }
+}

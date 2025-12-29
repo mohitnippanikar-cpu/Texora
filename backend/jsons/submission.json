@@ -1,0 +1,155 @@
+{
+  "submissions": [
+    {
+      "bid_id": "bid-fzdfsdf42349876abcdef123456",
+      "vendor_id": "v125",
+      "tender_id": "TND-2024-121",
+      "bidder_name": "Tech Supplies Co.",
+      "bidder_contact": "Ravi Sharma",
+      "bidder_phone": "+91 9123456780",
+      "bidder_email": "ravi.sharma@techsuppliesco.com",
+      "bid_amount": 4800000,
+      "submission_date": "2024-07-15T10:30:00Z",
+      "earnest_money_deposit_paid": true,
+      "attachments": [
+        {
+          "file_name": "bid_proposal.pdf",
+          "url": "/bids/12345/submissions/tech_supplies_co/bid_proposal.pdf"
+        },
+        {
+          "file_name": "compliance_certificates.pdf",
+          "url": "/bids/12345/submissions/tech_supplies_co/compliance_certificates.pdf"
+        }
+      ],
+      "current_stage": 1,
+      "evaluation_score": 85,
+      "evaluation": {
+        "verification": {
+          "Company Registration": true,
+          "Tax Compliance": true,
+          "Previous Work References": true,
+          "ISO Certification": false,
+          "GST Registration": true
+        },
+        "verification_score": 90,
+        "verification_reasoning": "The bidder has valid company registration, tax compliance, and previous work references but lacks ISO certification.",
+
+        "elegibility": [true, false, true],
+        "elegibility_score": 85,
+        "elegibility_reasoning": "The bidder has over 5 years of experience and holds ISO 9001 certification but has only supplied to 2 large corporations in the last 2 years, which does not meet the requirement of at least 3.",
+
+        "technical_sku": {
+          "Intel Core processors": [true, false],
+          "SSD Storage": [true, true],
+          "RAM": [true, false, true],
+          "Printer Technology": [false, true]
+        },
+        "technical_checklist": [true, true, false],
+        "technical_score": 80,
+        "technical_reasoning": "Meets most technical specifications but falls short on the processor generation and printer type requirements. Delivery time and installation requirements are met, but the maintenance period is only 1 year instead of the required 2 years.",
+
+        "financial": {
+          "Intel Core processors": {
+            "rate_per_unit": 30000,
+            "quantity": 50,
+            "total_cost": 1500000
+          },
+          "SSD Storage": {
+            "rate_per_unit": 10000,
+            "quantity": 50,
+            "total_cost": 500000
+          },
+          "RAM": {
+            "rate_per_unit": 16000,
+            "quantity": 100,
+            "total_cost": 1600000
+          },
+          "Printer Technology": {
+            "rate_per_unit": 50000,
+            "quantity": 20,
+            "total_cost": 1000000
+          },
+          "others": {
+            "transportation": 50000,
+            "installation": 50000,
+            "warranty": 100000
+          },
+          "total_budget": 4800000
+        },
+
+        "financial_checklist": [true, true, true],
+
+        "financial_score": 95,
+        "financial_reasoning": "The bid amount is within the acceptable range.",
+
+        "legal": [true, true],
+        "legal_score": 100,
+        "legal_reasoning": "The bidder complies with all local and national regulations and the products are 85% made in India."
+      }
+    },
+    {
+      "bid_id": "2",
+      "tender_id": "12345",
+      "bidder_name": "Office Essentials Ltd.",
+      "bidder_contact": "Rina Das",
+      "bidder_phone": "+91 9876543210",
+      "bidder_email": "rina.das@officeessentials.com",
+      "bid_amount": 5100000,
+      "submission_date": "2024-07-20T14:45:00Z",
+      "attachments": [
+        {
+          "file_name": "bid_proposal.pdf",
+          "url": "https://example.com/tenders/12345/submissions/office_essentials_ltd/bid_proposal.pdf"
+        }
+      ],
+      "status": "evaluated",
+      "evaluation_score": 95,
+      "evaluation": {
+        "elegibility": [true, true, true],
+        "elegibility_score": 100,
+        "elegibility_reasoning": "The bidder meets all eligibility criteria including experience, client base, and ISO certification.",
+        "technical": {
+          "Intel Core processors": [true, true],
+          "SSD Storage": [true, true],
+          "RAM": [true, true, true],
+          "Printer Technology": [true, true]
+        },
+        "technical_score": 100,
+        "technical_reasoning": "The bidder meets all technical specifications for processors, storage, RAM, and printers.",
+        "financial": {
+          "Intel Core processors": {
+            "rate_per_unit": 32000,
+            "quantity": 50,
+            "total_cost": 1600000
+          },
+          "SSD Storage": {
+            "rate_per_unit": 11000,
+            "quantity": 50,
+            "total_cost": 550000
+          },
+          "RAM": {
+            "rate_per_unit": 17000,
+            "quantity": 100,
+            "total_cost": 1700000
+          },
+          "Printer Technology": {
+            "rate_per_unit": 52500,
+            "quantity": 20,
+            "total_cost": 1050000
+          },
+          "others": {
+            "transportation": 50000,
+            "installation": 50000,
+            "warranty": 100000
+          },
+          "total_budget": 5100000
+        },
+        "financial_score": 90,
+        "financial_reasoning": "The bid amount is slightly higher than the first bidder but within the budget.",
+        "legal": [true, true],
+        "legal_score": 100,
+        "legal_reasoning": "The bidder complies with all local and national regulations."
+      }
+    }
+  ]
+}

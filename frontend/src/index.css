@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* KMRL Custom Styles */
+@layer base {
+  * {
+    border-color: rgb(226 232 240);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: white;
+    color: rgb(15 23 42);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Enhanced Card Components */
+  .kmrl-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(226 232 240);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .kmrl-card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .kmrl-card-interactive {
+    background-color: white;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(226 232 240);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .kmrl-card-interactive:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  /* Professional Buttons */
+  .btn-primary {
+    background: linear-gradient(to right, rgb(5 150 105), rgb(4 120 87));
+    color: white;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(to right, rgb(4 120 87), rgb(6 95 70));
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: rgb(51 65 85);
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: 1px solid rgb(203 213 225);
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgb(248 250 252);
+    border-color: rgb(148 163 184);
+  }
+  
+  .btn-ghost {
+    color: rgb(71 85 105);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .btn-ghost:hover {
+    background-color: rgb(241 245 249);
+    color: rgb(15 23 42);
+  }
+
+  /* Form Controls */
+  .form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid rgb(226 232 240);
+    border-radius: 0.75rem;
+    transition: colors 0.2s ease;
+    background-color: rgb(248 250 252);
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: rgb(5 150 105);
+    box-shadow: 0 0 0 3px rgb(5 150 105 / 0.1);
+    background-color: white;
+  }
+  
+  .form-input::placeholder {
+    color: rgb(148 163 184);
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgb(51 65 85);
+    margin-bottom: 0.5rem;
+  }
+
+  /* Status Indicators */
+  .status-operational {
+    background-color: rgb(209 250 229);
+    color: rgb(6 95 70);
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .status-warning {
+    background-color: rgb(254 243 199);
+    color: rgb(146 64 14);
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .status-error {
+    background-color: rgb(254 226 226);
+    color: rgb(153 27 27);
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  /* Loading States */
+  .loading-spinner {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Typography */
+  .heading-primary {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: rgb(15 23 42);
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+  }
+  
+  @media (min-width: 768px) {
+    .heading-primary {
+      font-size: 2.25rem;
+    }
+  }
+  
+  .heading-secondary {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(30 41 59);
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+  }
+  
+  @media (min-width: 768px) {
+    .heading-secondary {
+      font-size: 1.875rem;
+    }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(241 245 249);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(148 163 184);
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(5 150 105), 0 0 0 4px rgb(5 150 105 / 0.2);
+}
+
+/* Responsive Design Helpers */
+@media (max-width: 640px) {
+  .kmrl-card {
+    border-radius: 0.5rem;
+  }
+}
+
+/* Login Page Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+/* SKU Processing Animations */
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-progress {
+  animation: progress 2s ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
